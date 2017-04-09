@@ -1,3 +1,38 @@
 Class Staff
 {
+  long staff_ID;
+	int staff_Role;
+	String staff_name;
+	String staff_Dept;
+	String staff_Tel;
+	String staff_Add;
+	
+	public boolean loginStaff(long input_ID, long real_ID)// (on click button)
+	{
+		if (input_ID == real_ID)
+			return true;
+		else
+			return false;
+	}
+	
+	public double topUpCardSales(double current_balance, double top_money)// (on click button)
+	{
+		current_balance += top_money;
+		return current_balance;
+	}
+	
+	public String employeeCheckM()// (on click button)
+	{}
+	public String employeeInforUpdateM()// (on click button)
+	{}
+	public String customerCheckM()// (on click button)
+	{}
+	public String customerInforUpdateM()// (on click button)
+	{}
+	public String productInforUpdateM()// (on click button)
+	{}
+	public String productInforCreateM()// (on click button)
+	{
+		//create new data entries and write into the database
+	}
 }
