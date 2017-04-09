@@ -1,13 +1,13 @@
-Class Customer
+import java.util.Date;
+
+public class Customer 
 {
-  //define all the variables to be used in this class
-  //refer to related Trello cards with the tag "Class Customer"
-  	long customer_ID
+	long customer_ID;
 	String customer_Name;
 	long card_ID;
-	double card_Balance;
-	int loyalty_P;
-	int loyalty_M;
+	static double card_Balance;
+	static int loyalty_P;
+	static int loyalty_M;
 	Date open_D;
 	Date expire_D;
 	double top_Up_Amount;
@@ -35,10 +35,9 @@ Class Customer
 		return current_balance;
 	}
 	
-	public double checkOut(double current_balance, double request_balance) //(on click button)
+	public static double checkOut(double card_balance,double request_balance) //(on click button)
 	{
-		current_balance -= request_balance;
-		return current_balance;
+		 return card_balance -= request_balance;
 	}
 	
 	public boolean is_Pw_Correct(String input_pw, String real_pw) //(Boolean)
