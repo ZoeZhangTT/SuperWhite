@@ -20,7 +20,13 @@ Class Staff
 		current_balance += top_money;
 		return current_balance;
 	}
-	
+	public String productCheckW()// (on click button)
+	{}
+	public double shelfRepW(double current_amount, double replenish_amount)// (on click button)
+	{
+		current_amount += replenish_amount;
+		return current_amount;
+	}
 	public String employeeCheckM()// (on click button)
 	{}
 	public String employeeInforUpdateM()// (on click button)
