@@ -1,6 +1,6 @@
 Class Staff
 {
-  long staff_ID;
+  	long staff_ID;
 	int staff_Role;
 	String staff_name;
 	String staff_Dept;
@@ -35,4 +35,10 @@ Class Staff
 	{
 		//create new data entries and write into the database
 	}
+		public String supplierCheckM()// (on click button)
+	{}
+	public String supplierInforCreateM()// (on click button)
+	{}
+	public String supplierInforUpdateM()// (on click button)
+	{}
 }
