@@ -1,0 +1,14 @@
+
+public class Transaction 
+{
+	double transaction_Amount;
+	double transaction_Money;
+	long transaction_No;
+	
+	public String autoShowInfo()// (automatic check-up)
+	{}
+	public String checkTranInfo()// (on click button)
+	{}
+	public String itemChangeSales()
+	{}
+}
