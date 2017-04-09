@@ -1,3 +1,16 @@
+import java.util.Date;
+
 Class Supplier
 {
+  long supplier_ID; 
+	String supplier_Name;
+	Date supplier_Start_Date;
+	Date supplier_End_Date;
+	String supplier_Con_Name;
+	String supplier_Con_Add;
+	String supplier_Con_Tel;
+	String supplier_Con_Eml;
+	
+	public String supplierCheckAll()// (on click button)
+	{}
 }
