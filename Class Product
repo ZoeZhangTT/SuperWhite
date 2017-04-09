@@ -1,8 +1,8 @@
 Class Product
 {
-  //define the variables to be used in this class
-  //refer to related Trello cards
-  long product_ID;
+	//define the variables to be used in this class
+	//refer to related Trello cards
+	long product_ID;
 	String product_Name;
 	double product_Price_O;
 	double dis_per;
@@ -19,7 +19,7 @@ Class Product
 	static double shelf_Current;
 	double shelf_per;
   
-  public String check()// (on click button)
+  	public String check()// (on click button)
 	{}
 	public boolean if_Bulk()// (boolean)
 	{}
@@ -31,4 +31,8 @@ Class Product
 	{}
 	public String shelfRepW()// (on click button)
 	{}
+	public static double checkOut(double request_amount, double shelf_current) //(on click button)
+	{
+		return shelf_current -= request_amount;
+	}
 }
