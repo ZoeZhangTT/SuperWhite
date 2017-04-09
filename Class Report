@@ -1,0 +1,14 @@
+import java.util.Date;
+
+public class Report 
+{
+	Date report_Start_D;
+	Date report_End_D;
+	int top_Rank;
+	boolean is_Paid_To_Spplier;
+	
+	public String newReportSupply()// (on click button)
+	{}
+	public String newReportSales()// (on click button)
+	{}
+}
