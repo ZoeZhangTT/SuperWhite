@@ -1,0 +1,11 @@
+//the main controller of the system
+public class Supermarket {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Scanner scan = new Scanner (System.in);
+		//long id = scan.nextLong();
+		//get the password from database using the typed in long type value as the query key
+		
+	}
+}
