@@ -2,4 +2,68 @@ Class Customer
 {
   //define all the variables to be used in this class
   //refer to related Trello cards with the tag "Class Customer"
+  	long customer_ID
+	String customer_Name;
+	long card_ID;
+	double card_Balance;
+	int loyalty_P;
+	int loyalty_M;
+	Date open_D;
+	Date expire_D;
+	double top_Up_Amount;
+	String customer_Pw;
+	boolean is_Pw_Correct;
+	int max_Temp_Pw;
+	boolean is_Balance_Enough;
+	
+	public boolean cLogin(long input_ID, long real_ID) //(on click button)
+	{
+		if (input_ID == real_ID)
+			return true;
+		else
+			return false;
+	}
+	
+	public String viewMyAccount() //(on click button)
+	{
+		//response to single click of the "view" button and promote a new panel
+	}
+	
+	public double topUpCard(double current_balance, double top_money) //(on click button)
+	{
+		current_balance += top_money;
+		return current_balance;
+	}
+	
+	public double checkOut(double current_balance, double request_balance) //(on click button)
+	{
+		current_balance -= request_balance;
+		return current_balance;
+	}
+	
+	public boolean is_Pw_Correct(String input_pw, String real_pw) //(Boolean)
+	{
+		if (input_pw == real_pw)
+			return true;
+		else
+			return false;
+	}
+	
+	public int max_Temp_Pw(String input_pw, String real_pw, int max_Temp_Pw) //(int)
+	{
+		max_Temp_Pw = 0;
+		if (input_pw != real_pw)
+			max_Temp_Pw++;
+		return max_Temp_Pw;
+	}
+	
+	public boolean is_Balance_Enough(double current_balance, double request_balance) //(Boolean)
+	{
+		if (current_balance - request_balance < 0)
+			//System.out.print("The current balance in your account is not enough!");
+			return false;
+		else
+			//current_balance -= request_balance;
+			return true;
+	}
 }
