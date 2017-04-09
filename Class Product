@@ -2,4 +2,33 @@ Class Product
 {
   //define the variables to be used in this class
   //refer to related Trello cards
+  long product_ID;
+	String product_Name;
+	double product_Price_O;
+	double dis_per;
+	double product_Price_D;
+	boolean if_Bulk;
+	String product_Categ;
+	boolean product_Select_Alph;
+	String pro_In_Top_Cate;
+	boolean product_Select_Top;
+	double stock_Max;
+	static double stock_Current;
+	double stock_per;
+	double shelf_Max;
+	static double shelf_Current;
+	double shelf_per;
+  
+  public String check()// (on click button)
+	{}
+	public boolean if_Bulk()// (boolean)
+	{}
+	public String addProToCheckAlph() //(on click button)
+	{}
+	public String addProToCheckTop()// (on click button)
+	{}
+	public String productCheckW()// (on click button)
+	{}
+	public String shelfRepW()// (on click button)
+	{}
 }
